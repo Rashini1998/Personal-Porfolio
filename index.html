@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Personal Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <script
+      src="https://kit.fontawesome.com/24e44905f5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- <script src="" async defer></script> -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>
+            <span>Full-stack Developer</span>
+          </p>
+          <h1>Hi, I'm <span>Rashini</span> Gamalath<br />From Sri Lanka</h1>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------about------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subTitle">About Me</h1>
+            <br />
+            <p>
+              A conscientious undergraduate, I possess a strong work ethic,
+              dedication, and a proactive approach to learning. With a keen
+              interest in software engineering, I am eager to tackle challenges,
+              expand my skills, and contribute to innovative projects. Known for
+              my collaborative spirit and leadership qualities, I am ready to
+              seize opportunities for professional growth and make a meaningful
+              impact in the field.
+            </p>
+            <br />
+            <div class="tabTitles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <!-- --------skills-------- -->
+            <div class="tabContents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span
+                    ><span class="material-symbols-outlined">
+                      radio_button_checked
+                    </span>
+                    Programming Languages</span
+                  >
+                  <br /><br />
+                  <img
+                    src="icons/c-language.png"
+                    alt="C programming language icon"
+                  />
+                  <img src="icons/java.png" alt="Java icon" />
+                  <img src="icons/python.png" alt="Python icon" />
+                  <img src="icons/JS.png" alt="JS icon" />
+                </li>
+                <li>
+                  <span
+                    ><span class="material-symbols-outlined">
+                      radio_button_checked
+                    </span>
+                    Web Development</span
+                  >
+                  <br /><br />
+                  <img src="icons/html.png" alt="html icon" />
+                  <img src="icons/css.png" alt="CSS icon" />
+                  <img src="icons/reactjs.png" alt="ReactJS icon" />
+                  <img src="icons/nodejs.png" alt="nodejs icon" />
+                </li>
+                <li>
+                  <span
+                    ><span class="material-symbols-outlined">
+                      radio_button_checked
+                    </span>
+                    Mobile App Development</span
+                  >
+                  <br /><br />
+                  <img src="icons/react-native.png" alt="react native icon" />
+                </li>
+                <li>
+                  <span
+                    ><span class="material-symbols-outlined">
+                      radio_button_checked
+                    </span>
+                    Database</span
+                  >
+                  <br /><br />
+                  <img src="icons/mysql.png" alt="mysql icon" />
+                  <img src="icons/mssql.png" alt="mssql icon" />
+                  <img src="icons/mariadb.png" alt="mariadb icon" />
+                </li>
+                <li>
+                  <span
+                    ><span class="material-symbols-outlined">
+                      radio_button_checked
+                    </span>
+                    Tools</span
+                  >
+                  <br /><br />
+                  <img src="icons/postman.png" alt="postman icon" />
+                  <img src="icons/git.png" alt="git icon" />
+                  <img src="icons/jira.png" alt="jira icon" />
+                  <img src="icons/figma.png" alt="figma icon" />
+                </li>
+              </ul>
+            </div>
+            <!-- --------experience-------- -->
+            <div class="tabContents" id="experience">
+              <ul>
+                <li>
+                  <span
+                    ><span class="material-symbols-outlined">
+                      radio_button_checked
+                    </span>
+                    WSO2 Lanka Pvt.Ltd</span
+                  >
+                  <br /><br />
+                  <br />
+                  105 Bauddhaloka Mawatha, Colombo <br /><br />7 month
+                  internship as a Software Engineer
+                </li>
+              </ul>
+            </div>
+            <!-- ---------education----------- -->
+            <div class="tabContents" id="education">
+              <ul>
+                <li>
+                  <span
+                    ><span class="material-symbols-outlined">
+                      radio_button_checked
+                    </span>
+                    University of Moratuwa - Faculty of Information
+                    Technology</span
+                  >
+                </li>
+                <br />
+                <li>
+                  B.Sc (Hons) in Information Technology<br /><br />Reading 4th
+                  year<br /><br />GPA 3.77 (up to 3rd year)
+                </li>
+                <br />
+                <li>
+                  <span
+                    ><span class="material-symbols-outlined">
+                      radio_button_checked
+                    </span>
+                    Devi Balika Vidyalaya - Colombo 08</span
+                  >
+                  <br /><br />
+                </li>
+
+                <li>
+                  GCE Advanced Level - Physical Science stream (2018)
+                  <br /><br />
+                  Results - Chemistry A, Combined Mathematics B, Physics B
+                  <br /><br />Z Score - 1.612
+                </li>
+                <br /><br />
+                <li>
+                  <span
+                    ><span class="material-symbols-outlined">
+                      radio_button_checked
+                    </span>
+                    Devi Balika Vidyalaya - Colombo 08</span
+                  >
+                  <br /><br />
+                </li>
+
+                <li>GCE Ordinary Level (2014) <br /><br />Results - 9As</li>
+                <br /><br />
+                <li>
+                  <span
+                    ><span class="material-symbols-outlined">
+                      radio_button_checked
+                    </span>
+                    Comprehensive Master Java Developer (CMJD)</span
+                  >
+                  <br /><br />
+                </li>
+
+                <li>
+                  Institute of Software Engineering, <br /><br />Panadura Branch
+                  (2019-2020)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------projects----------------- -->
+    <!-- <div id="projects">
+      <div class="container">
+        <h1 class="subTitle">My Projects</h1>
+        <div class="project-list">
+          <div>
+            <i class="fa-solid fa-hands-asl-interpreting"></i>
+            <h2>
+              Storytelling Application for the Deaf Children Using Sri Lankan
+              Sign Language
+            </h2>
+            <br />
+            <p>
+              The project introduces a storytelling app using Sri Lankan sign
+              language to assist deaf children with communication and literacy
+              needs, utilizing NLP and computer vision technologies.
+            </p>
+            <a
+              href="https://github.com/Storytelling-for-Deaf/Picture-Story-Dataset"
+              target="_blank"
+              >Check This</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-file-lines"></i>
+            <h2>GramaCheck</h2>
+            <br />
+            <p>
+              GramaCheck, a web-based platform, simplifies the Grama
+              Certification process by integrating advanced technology and
+              user-friendly design, improving efficiency for both applicants and
+              Grama Niladhari
+            </p>
+            <a
+              href="https://github.com/Rashini1998/GramaCheck_Frontend-1"
+              target="_blank"
+              >Check This</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-traffic-light"></i>
+            <h2>Road Traffic Accidents Data Analysis</h2>
+            <br />
+            <p>
+              The project involves analyzing road traffic accident data to
+              identify patterns and distribution, providing data-driven
+              recommendations for improved road safety through specific
+              sub-projects and collaboration.
+            </p>
+            <a
+              href="https://github.com/Rashini1998/Road-Traffic-Accidents-Severity-Prediction"
+              target="_blank"
+              >Check This</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-person-biking"></i>
+            <h2>DY Tracker</h2>
+            <br />
+            <p>
+              DY Tracker is a software system having a web application and a
+              mobile application that is developed to provide a solution for the
+              problem of lack of connectivity with the target customer base of
+              the dynamic sellers.
+            </p>
+            <a href="#" target="_blank">Check This</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <h2>Automatic whiteboard writer and eraser</h2>
+            <br />
+            <p>
+              The project aims to design a low-cost, high-accuracy automated
+              device for drawing circuits and cleaning large whiteboards, using
+              G code stored on a micro SD card.
+            </p>
+            <a
+              href="https://github.com/Rashini1998/Automatic-whiteboard-writer-and-eraser"
+              target="_blank"
+              >Check This</a
+            >
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- ------------------------my work--------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subTitle">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work1.jpg" alt="project 01" />
+            <div class="layer">
+              <h3>
+                Storytelling Application for the Deaf Children Using Sri Lankan
+                Sign Language
+              </h3>
+              <p>
+                The project introduces a storytelling app using Sri Lankan sign
+                language to assist deaf children with communication and literacy
+                needs, utilizing NLP and computer vision technologies.
+              </p>
+              <a
+                href="https://github.com/Storytelling-for-Deaf/Picture-Story-Dataset"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work2.jpg" alt="project 02" />
+            <div class="layer">
+              <h3>GramaCheck</h3>
+              <p>
+                GramaCheck, a web-based platform, simplifies the Grama
+                Certification process by integrating advanced technology and
+                user-friendly design, improving efficiency for both applicants
+                and Grama Niladhari
+              </p>
+              <a
+                href="https://github.com/Rashini1998/GramaCheck_Frontend-1"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work3.jpg" alt="project 03" />
+            <div class="layer">
+              <h3>Road Traffic Accidents Data Analysis</h3>
+              <p>
+                The project involves analyzing road traffic accident data to
+                identify patterns and distribution, providing data-driven
+                recommendations for improved road safety through specific
+                sub-projects and collaboration.
+              </p>
+              <a
+                href="https://github.com/Rashini1998/Road-Traffic-Accidents-Severity-Prediction"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work4.jpg" alt="project 04" />
+            <div class="layer">
+              <h3>DY Tracker</h3>
+              <p>
+                DY Tracker is a software system having a web application and a
+                mobile application that is developed to provide a solution for
+                the problem of lack of connectivity with the target customer
+                base of the dynamic sellers.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work5.jpg" alt="project 05" />
+            <div class="layer">
+              <h3>Automatic whiteboard writer and eraser</h3>
+              <p>
+                The project aims to design a low-cost, high-accuracy automated
+                device for drawing circuits and cleaning large whiteboards,
+                using G code stored on a micro SD card.
+              </p>
+              <a
+                href="https://github.com/Rashini1998/Automatic-whiteboard-writer-and-eraser"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+      <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+
+    <!-- ------------contact---------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <br />
+            <div class="social-icons">
+              <a href="gamalathrashini@gmail.com" target="_blank"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/rashini-gamalath-3b27b41b2/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Rashini1998" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://gamalathrashini.medium.com/" target="_blank"
+                ><i class="fa-brands fa-medium"></i
+              ></a>
+            </div>
+            <a
+              href="doc/Rashini Gamalath.pdf"
+              download
+              target="_blank"
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © Rashini Gamalath <i class="fa-solid fa-heart"></i> All rights
+          reserved.
+        </p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tabContents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwHZlVLayomLHSYrqQ5X8BvMwRndFl-FO-s08yO1UeetAaf_lHkW2rjIM8emafMFJph/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
