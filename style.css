@@ -322,6 +322,11 @@ nav ul li a:hover::after{
 .contact-left p{
     margin-top: 30px;
 }
+.contact-left p i{
+    color: #5b76ec;
+    margin-right: 15px;
+    font-size: 25px;
+}
 
 .social-icons a{
     text-decoration: none;
